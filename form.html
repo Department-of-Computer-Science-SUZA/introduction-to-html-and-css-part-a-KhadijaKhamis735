@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        
+            <fieldset>
+
+                <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+      
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+      
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male" required> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other<br><br>
+
+
+            </fieldset>
+            
+
+            <fieldset>
+
+                <input type="checkbox" name="interests" value="coding"> Coding<br>
+                <input type="checkbox" name="interests" value="music"> Music<br>
+                <input type="checkbox" name="interests" value="sports"> Sports<br><br>  
+    
+            </fieldset>
+           
+            <fieldset>
+
+                <legend>More Information</legend><br>
+                 
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="">Select your country</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="Kenya">Kenya</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Tanzania">Malawi</option>
+              <option value="Kenya">Zimbabwe</option>
+              <option value="Uganda">Canada</option>
+            </select><br><br>
+
+
+    <label for="profile">Upload Profile Picture:</label>
+    <input type="file" id="profile" name="profile" accept="Images"><br><br>
+
+            <input type="submit" value="Submit Form">
+            
+
+              
+            </fieldset>
+
+            <p>The difference between GET and POST is that GET is used to request data from server but POST is used to send data to the server</p><br><br>
+            <p>If required fields are empty upon submission, the browser, server or JavaScript validation may prevent submission and show an error<br>
+            ensuring that the necessary data is entered before processing form</p>
+           
+           
+    </form>
+    
+</body>
+</html>
